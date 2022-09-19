@@ -6,9 +6,9 @@ import Header from './Header';
 import ThemeContext from '../context/ThemeContext'
 
 function Container() {
-  const {theme} = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className={`app ${theme === "dark" ? theme: ""}`}>
+    <div className={`app ${theme}`}>
         <Header/>
         <hr />
         <Button/>
